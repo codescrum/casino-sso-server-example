@@ -15,7 +15,10 @@ gem 'casino-moped_authenticator'
 gem 'whenever', :require => false
 
 gem 'pg'
+
+# For the users database example
 gem 'mongoid', '~> 3'
+gem 'devise', '3.4.1'
 
 group :development do
   gem 'capistrano', '~> 2.15'
