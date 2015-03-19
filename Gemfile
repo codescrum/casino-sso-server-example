@@ -14,17 +14,8 @@ gem 'casino-moped_authenticator'
 
 gem 'whenever', :require => false
 
-group :sqlite do
-  gem 'sqlite3'
-end
-
-group :mysql do
-  gem 'mysql2'
-end
-
-group :postgres do
-  gem 'pg'
-end
+gem 'pg'
+gem 'mongoid', '~> 3'
 
 group :development do
   gem 'capistrano', '~> 2.15'
