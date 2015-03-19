@@ -1,7 +1,17 @@
-# CASinoApp
+# SSO Example Server
 
-Ready to use CAS server.
+##Setup Databases
 
-## Setup
+ - Create *database.yml*, *mongoid.yml* and *cas.yml* configuration files from the example files provided.
 
-Please check our [documentation](http://casino.rbcas.com/docs/) to learn how to setup CASino.
+    cp database.yml.example database.yml
+    cp mongoid.yml.example mongoid.yml
+    cp cas.yml.example cas.yml
+
+ - Prepare databases
+
+    rake db:setup
+
+ - Seed users database
+
+    rake db:seed
