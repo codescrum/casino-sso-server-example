@@ -16,6 +16,7 @@
 
 /config/database.yml
 /config/cas.yml
+/config/mongoid.yml
 
 /vendor/bundle
 /public/assets
