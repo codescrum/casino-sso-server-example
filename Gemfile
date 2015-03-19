@@ -10,8 +10,7 @@ group :assets do
 end
 
 gem 'casino'
-gem 'casino-ldap_authenticator'
-gem 'casino-activerecord_authenticator'
+gem 'casino-moped_authenticator'
 
 gem 'whenever', :require => false
 
