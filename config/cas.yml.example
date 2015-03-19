@@ -1,39 +1,12 @@
-production:
+development:
   frontend:
-    sso_name: 'CASino'
+    sso_name: 'SSO Example Server'
     footer_text: 'Powered by <a href="http://rbcas.com/">CASino</a>'
   authenticators:
-
-########################################
-# LDAP
-########################################
-#    my_company_ldap:
-#      authenticator: 'LDAP'
-#      options:
-#        host: 'localhost'
-#        port: 636
-#        base: 'ou=people,dc=example,dc=com'
-#        username_attribute: 'uid'
-#        encryption: 'simple_tls'
-#        extra_attributes:
-#          email: 'mail'
-#          fullname: 'displayname'
-
-########################################
-# SQL (ActiveRecord authenticator)
-########################################
-#    my_company_sql_database:
-#      authenticator: "ActiveRecord"
-#      options:
-#        connection:
-#          adapter: "mysql2"
-#          host: "localhost"
-#          username: "casino"
-#          password: "secret"
-#          database: "users"
-#        table: "users"
-#        username_column: "username"
-#        password_column: "password"
-#        extra_attributes:
-#          email: "email_database_column"
-#          fullname: "displayname_database_column"
+     sso_example_database:
+      authenticator: "Moped"
+      options:
+        database_url: "mongodb://localhost:27017/sso_example_server"
+        collection: "users"
+        username_column: "email"
+        password_column: "encrypted_password"

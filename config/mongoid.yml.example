@@ -1,0 +1,6 @@
+development:
+  sessions:
+    default:
+      database: sso_example_server
+      hosts:
+        - localhost:27017
